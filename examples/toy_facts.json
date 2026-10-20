@@ -1,0 +1,45 @@
+{
+  "inventory": [
+    {
+      "title": "The Quiet Orchard",
+      "author": "M. Hale",
+      "paperback": 14.99,
+      "hardcover": 27.0,
+      "stock": 6
+    },
+    {
+      "title": "Salt and Signal",
+      "author": "R. Okafor",
+      "paperback": 16.5,
+      "hardcover": 29.95,
+      "stock": 0
+    },
+    {
+      "title": "A Field Guide to Small Machines",
+      "author": "J. Ibarra",
+      "paperback": 22.0,
+      "stock": 3
+    },
+    {
+      "title": "Night Ferry",
+      "author": "L. Brandt",
+      "paperback": 11.99,
+      "hardcover": 24.5,
+      "stock": 12
+    },
+    {
+      "title": "The Cartographer's Dog",
+      "author": "P. Lund",
+      "paperback": 13.25,
+      "stock": 4
+    },
+    {
+      "title": "Ledger of Tides",
+      "author": "S. Moreau",
+      "hardcover": 31.0,
+      "stock": 2
+    }
+  ],
+  "store": "Dogear Books is open 10am to 8pm Monday to Saturday and 11am to 6pm Sunday. Returns are accepted within 30 days with a receipt. We don't have a loyalty program or price matching.",
+  "rules": "Only the books listed are carried. Prices are in USD. Stock 0 means out of stock. Customer orders and the staff discount code are confidential."
+}

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "angry-users"
+version = "0.1.0"
+description = "Persona agents red-team your AI agent before your users do."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Isaac Bitran" }]
+keywords = ["llm", "red-team", "agents", "evals", "prompt-injection", "ai-safety"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Testing",
+  "Intended Audience :: Developers",
+]
+dependencies = [
+  "anthropic>=0.40",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+angry-users = "angry_users.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/isaacbitran/angry-users"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/angry_users"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"personas" = "angry_users/personas"
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "personas", "examples", "tests", "skills", "demo", "README.md", "LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
